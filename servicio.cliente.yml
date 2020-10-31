@@ -1,0 +1,17 @@
+#HTTP Server
+server:
+  port: 3111
+
+#Discovery Server Access
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    status-page-url-path: /infocliente
+    health-check-url-path: /healthCliente
+    metadata-map:
+       app-owner: netorl23
+       description: Aplicación de prueba para el curso de Java E(Cliente).
+
+#    initial-status: out-of-service

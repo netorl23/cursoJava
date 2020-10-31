@@ -1,0 +1,17 @@
+#HTTP Server
+server:
+  port: 4111
+
+#Discovery Server Access
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    status-page-url-path: /infoPasivo
+    health-check-url-path: /healthPasivo
+    metadata-map:
+       app-owner: netorl23
+       description: Aplicación de prueba para el curso de Java E(Pasivo).
+
+#    initial-status: out-of-service
