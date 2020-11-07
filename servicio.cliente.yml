@@ -1,6 +1,6 @@
 #HTTP Server
 server:
-  port: 3111
+  port: 3999
 
 #Discovery Server Access
 eureka:
